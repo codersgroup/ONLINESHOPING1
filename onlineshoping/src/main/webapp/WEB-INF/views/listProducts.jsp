@@ -14,8 +14,8 @@
 					<c:if test="${userClickAllProduct==true}">
 						<ol class="breadcrumb">
 
-							<li><a href="${context}/home">Home</a></li>
-							<li class="active">All Products</li>
+							<li class="breadcrumb-item"><a href="${context}/home">Home</a></li>
+							<li class="breadcrumb-item active">All Products</li>
 
 						</ol>
 					</c:if>
@@ -23,9 +23,9 @@
 					<c:if test="${userClickIdProduct==true}">
 						<ol class="breadcrumb">
 
-							<li><a href="${context}/home">Home</a></li>
-							<li class="active">Category</li>
-							<li class="active">${catagory.name}</li>
+							<li class="breadcrumb-item"><a href="${context}/home">Home</a></li>
+							<li class="breadcrumb-item active">Category</li>
+							<li class="breadcrumb-item active">${catagory.name}</li>
 
 						</ol>
 					</c:if>

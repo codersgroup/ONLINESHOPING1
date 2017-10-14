@@ -12,6 +12,12 @@
 		<springmcv.version>4.3.6.RELEASE</springmcv.version>
 	</properties>
 	<dependencies>
+	
+	<dependency>
+	          <groupId>com.varunasoft</groupId>
+	          <artifactId>shopingBackend</artifactId>
+	          <version>0.0.1-SNAPSHOT</version>
+	</dependency>
 		<!-- spring-webmvc -->
 		
 		<dependency>

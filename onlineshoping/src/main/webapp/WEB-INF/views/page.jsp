@@ -32,7 +32,7 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap themes CSS -->
+<!-- Bootstrap themes CSS  -->
 <link href="${css}/themes.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
@@ -47,24 +47,26 @@
 		<%@include file="./shared/navigation.jsp"%>
 
 		<div class="content">
+		<hr>
 			<!--home Page -->
 			<c:if test="${userClickHome==true}">
-				<%@ include file="home.jsp"%>
+				<%@ include file="./home.jsp"%>
 			</c:if>
 
 			<!--home Page -->
 			<c:if test="${userClickAboutUs==true}">
-				<%@ include file="aboutUs.jsp"%>
+				<%@ include file="./aboutUs.jsp"%>
 			</c:if>
 
-			<!--home Page -->
-			<c:if test="${userClickListOfProduct==true}">
-				<%@ include file="listOfProduct.jsp"%>
-			</c:if>
+
 
 			<!--home Page -->
 			<c:if test="${userClickContactUs==true}">
-				<%@ include file="contactUs.jsp"%>
+				<%@ include file="./contactUs.jsp"%>
+			</c:if>
+
+			<c:if test="${userClickAllProduct==true or userClickIdProduct==true}">
+				<%@ include file="./listProducts.jsp"%>
 			</c:if>
 
 			<!-- /.container -->
